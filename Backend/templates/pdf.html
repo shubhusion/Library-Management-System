@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>PDF</title>
+</head>
+
+<body>
+    <h2> Hi, {{user.username}}</h2><br>
+    Here is your monthly report for the month of {{month}}.
+    <h3><strong>Account details:</strong></h3>
+    <strong>Email:</strong> {{user.email}} <br>
+    <strong>Last Logged on:</strong> {{user.logged | replace("T", " ")}} <br><br>
+
+    {% if booking_info|length == 0 %}
+    <h3>You have not booked any books yet.</h3>
+    {% else %}
+    <h2 class="text-center"><strong>List details</strong></h2><br>
+    <table class="table table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Section Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for info in booking_info %}
+            <tr>
+                <td>{{ info.book_name }}</td>
+                <td>{{ info.author }}</td>
+                <td>{{ info.section_name }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table><br>
+    {% endif %}
+    <strong>Thank You for using the service. Have a great Day.</strong>
+</body>
+
+</html>
