@@ -1,5 +1,5 @@
 # ReaderBooks
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3a514750-0268-4d14-b819-803886392b90/deploy-status)](https://app.netlify.com/sites/readersgate/deploys)
 [![Flask](https://img.shields.io/badge/Flask-3.0.2-blue.svg)](https://flask.palletsprojects.com/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-Latest-brightgreen.svg)](https://vuejs.org/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.0-purple.svg)](https://getbootstrap.com/)
