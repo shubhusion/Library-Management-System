@@ -1,4 +1,10 @@
+
+<p align="center">
+  <img src="https://github.com/shubhusion/Library-Management-System/blob/main/frontend/src/assets/open-book.png" alt="ReaderBooks Logo" width="100" height="100">
+</p>
+
 # ReaderBooks
+
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/library-management-system-blond-phi)
 [![Flask](https://img.shields.io/badge/Flask-3.0.2-blue.svg)](https://flask.palletsprojects.com/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-Latest-brightgreen.svg)](https://vuejs.org/)
